@@ -5,9 +5,13 @@
 - Quickstart: [https://www.prisma.io/docs/getting-started/quickstart](https://www.prisma.io/docs/getting-started/quickstart)
 - DB Connections (link to MYSQL): [https://www.prisma.io/docs/concepts/database-connectors/mysql](https://www.prisma.io/docs/concepts/database-connectors/mysql)
 - How create a schema: [https://www.prisma.io/docs/concepts/components/prisma-schema](https://www.prisma.io/docs/concepts/components/prisma-schema)
-- How seeding your database: [https://www.prisma.io/docs/guides/database/seed-database](https://www.prisma.io/docs/guides/database/seed-database)
 - How create a migration: [https://www.prisma.io/docs/concepts/components/prisma-migrate](https://www.prisma.io/docs/concepts/components/prisma-migrate)
 - How to create a basic CRUD: [https://www.prisma.io/docs/concepts/components/prisma-client/crud](https://www.prisma.io/docs/concepts/components/prisma-client/crud)
+- How seeding your database: [https://www.prisma.io/docs/guides/database/seed-database](https://www.prisma.io/docs/guides/database/seed-database)
+
+## Videos
+https://www.youtube.com/watch?v=7RrgSh4k3nM&ab_channel=LeighHalliday
+https://www.youtube.com/watch?v=HCJmlvgO2WY&t=1072s&ab_channel=yoursTRULY
 
 ## Installation
 
