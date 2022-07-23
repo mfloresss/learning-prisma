@@ -1,0 +1,25 @@
+{
+  "name": "learning-prisma",
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "start": "nodemon server.js",
+    "studio": "prisma studio",
+    "db:seed": "prisma db seed",
+    "db:migrate": "prisma migrate dev --preview-feature",
+    "db:setup": "prisma migrate reset --force"
+  },
+  "prisma": {
+    "schema": "db/schema.prisma",
+    "seed": "node db/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.1.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "prisma": "^4.1.0"
+  }
+}
