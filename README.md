@@ -28,7 +28,7 @@ npm run db:setup # Runs migrations and seeds
 
 ### Run the app
 
-Open [http://localhost:4000](http://localhost:4000) with your browser to see the result.
+Open [http://localhost:4000/persons](http://localhost:4000/persons) or [http://localhost:4000/pets](http://localhost:4000/pets) with your browser to see the result.
 
 ```
 npm start
