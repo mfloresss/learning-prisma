@@ -1,10 +1,14 @@
-const personService = require("../services/person");
+const createPerson = require("./mutations/createPerson");
+const deletePerson = require("./mutations/deletePerson");
+const updatePerson = require("./mutations/updatePerson");
+const getPerson = require("./queries/getPerson");
+const getPersons = require("./queries/getPersons");
 
 class PersonController {
   async createPerson(req, res) {
     try {
       const { name, age, phone, email, pets } = req.body;
-      const person = await personService.createPerson({
+      const person = await createPerson({
         data: {
           name,
           age,
@@ -24,7 +28,7 @@ class PersonController {
   async getPerson(req, res) {
     try {
       const { id } = req.params;
-      const person = await personService.getPerson({
+      const person = await getPerson({
         where: {
           id,
         },
@@ -43,7 +47,7 @@ class PersonController {
   }
   async getPersons(req, res) {
     try {
-      const persons = await personService.getPersons();
+      const persons = await getPersons();
 
       if (!persons.length) {
         return res.status(404).json({ detail: "Persons not found" });
@@ -59,8 +63,8 @@ class PersonController {
   async updatePerson(req, res) {
     try {
       const { id } = req.params;
-      const { name, age, phone, email } = req.body;
-      const person = await personService.updatePerson({
+      const { name, age, phone, email, pets } = req.body;
+      const person = await updatePerson({
         where: {
           id,
         },
@@ -82,7 +86,7 @@ class PersonController {
   async deletePerson(req, res) {
     try {
       const { id } = req.params;
-      const person = await personService.deletePerson({
+      const person = await deletePerson({
         where: {
           id,
         },

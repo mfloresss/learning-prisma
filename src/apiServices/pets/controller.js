@@ -1,10 +1,14 @@
-const petService = require("../services/pet");
+const createPet = require("./mutations/createPet");
+const deletePet = require("./mutations/deletePet");
+const updatePet = require("./mutations/updatePet");
+const getPet = require("./queries/getPet");
+const getPets = require("./queries/getPets");
 
 class PetController {
   async createPet(req, res) {
     try {
       const { name, age, breed } = req.body;
-      const pet = await petService.createPet({
+      const pet = await createPet({
         data: {
           name,
           age,
@@ -22,7 +26,7 @@ class PetController {
   async getPet(req, res) {
     try {
       const { id } = req.params;
-      const pet = await petService.getPet({
+      const pet = await getPet({
         where: {
           id,
         },
@@ -41,7 +45,7 @@ class PetController {
   }
   async getPets(req, res) {
     try {
-      const pets = await petService.getPets();
+      const pets = await getPets();
 
       if (!pets.length) {
         return res.status(404).json({ detail: "Pets not found" });
@@ -58,7 +62,7 @@ class PetController {
     try {
       const { id } = req.params;
       const { name, age, breed } = req.body;
-      const pet = await petService.updatePet({
+      const pet = await updatePet({
         where: {
           id,
         },
@@ -79,7 +83,7 @@ class PetController {
   async deletePet(req, res) {
     try {
       const { id } = req.params;
-      const pet = await petService.deletePet({
+      const pet = await deletePet({
         where: {
           id,
         },
