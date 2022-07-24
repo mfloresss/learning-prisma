@@ -10,8 +10,9 @@
 - How seeding your database: [https://www.prisma.io/docs/guides/database/seed-database](https://www.prisma.io/docs/guides/database/seed-database)
 
 ## Videos
-- https://www.youtube.com/watch?v=7RrgSh4k3nM&ab_channel=LeighHalliday
-- https://www.youtube.com/watch?v=HCJmlvgO2WY&t=1072s&ab_channel=yoursTRULY
+- Prisma in 100 seconds (general explanation about prisma): https://www.youtube.com/watch?v=rLRIB6AF2Dg&ab_channel=Fireship
+- Full tutorial: https://www.youtube.com/watch?v=HCJmlvgO2WY&t=1072s&ab_channel=yoursTRULY
+- Seeding database: https://www.youtube.com/watch?v=7RrgSh4k3nM&ab_channel=LeighHalliday
 
 ## Installation
 

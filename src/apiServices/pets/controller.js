@@ -16,7 +16,7 @@ class PetController {
         },
       });
 
-      console.log({ pet });
+      console.log({ POST: pet });
       res.status(201).json(pet);
     } catch (err) {
       console.log(err);
@@ -36,7 +36,7 @@ class PetController {
         return res.status(404).json({ detail: "Pet not found" });
       }
 
-      console.log({ pet });
+      console.log({ GET: pet });
       res.status(200).json(pet);
     } catch (err) {
       console.log(err);
@@ -51,7 +51,7 @@ class PetController {
         return res.status(404).json({ detail: "Pets not found" });
       }
 
-      console.log({ pets });
+      console.log({ GET: pets });
       res.status(200).json(pets);
     } catch (err) {
       console.log(err);
@@ -73,7 +73,7 @@ class PetController {
         },
       });
 
-      console.log({ pet });
+      console.log({ UPDATE: pet });
       res.status(200).json(pet);
     } catch (err) {
       console.log(err);
@@ -88,7 +88,7 @@ class PetController {
           id,
         },
       });
-      console.log({ pet });
+      console.log({ DELETE: pet });
       res.status(200).json(pet);
     } catch (err) {
       console.log(err);

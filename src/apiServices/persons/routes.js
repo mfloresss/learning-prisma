@@ -3,14 +3,14 @@ const personController = require("./controller");
 
 const persons = express.Router();
 
-persons.post("/persons", personController.createPerson);
+persons.post("/api/persons", personController.createPerson);
 
-persons.get("/persons/:id", personController.getPerson);
+persons.get("/api/persons/:id", personController.getPerson);
 
-persons.get("/persons", personController.getPersons);
+persons.get("/api/persons", personController.getPersons);
 
-persons.patch("/persons/:id", personController.updatePerson);
+persons.patch("/api/persons/:id", personController.updatePerson);
 
-persons.delete("/persons/:id", personController.deletePerson);
+persons.delete("/api/persons/:id", personController.deletePerson);
 
 module.exports = persons;

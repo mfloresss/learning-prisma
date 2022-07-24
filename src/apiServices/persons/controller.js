@@ -18,7 +18,7 @@ class PersonController {
         },
       });
 
-      console.log({ person });
+      console.log({ POST: person });
       res.status(201).json(person);
     } catch (err) {
       console.log({ err });
@@ -38,7 +38,7 @@ class PersonController {
         return res.status(404).json({ detail: "Person not found" });
       }
 
-      console.log({ person });
+      console.log({ GET: person });
       res.status(200).json(person);
     } catch (err) {
       console.log(err);
@@ -53,7 +53,7 @@ class PersonController {
         return res.status(404).json({ detail: "Persons not found" });
       }
 
-      console.log({ persons });
+      console.log({ GET: persons });
       res.status(200).json(persons);
     } catch (err) {
       console.log(err);
@@ -76,7 +76,7 @@ class PersonController {
         },
       });
 
-      console.log({ person });
+      console.log({ UPDATE: person });
       res.status(201).json(person);
     } catch (err) {
       console.log(err);
@@ -92,7 +92,7 @@ class PersonController {
         },
       });
 
-      console.log({ person });
+      console.log({ DELETE: person });
       res.status(201).json(person);
     } catch (err) {
       console.log(err);
